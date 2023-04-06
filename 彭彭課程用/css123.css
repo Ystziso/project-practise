@@ -1,0 +1,17 @@
+            /* 標籤選擇器 */
+            body{background-color:whitesmoke}
+            /* Css選擇器 class屬性 */
+            .title{
+                margin-bottom:10px;
+                font-weight:bold;
+                font-size:24px
+            }
+            .content{
+                width:400px;
+                padding:10px;
+                border:1px dashed blue
+            }
+            .keyword{
+                color:red;
+                font-weight:bold
+            }

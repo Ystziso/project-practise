@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 迴圈指令</title>
+</head>
+<body>
+    <script>
+        // break 指令 強迫迴圈結束
+        let n=0;
+        while(n<=5){
+            if(n==4){
+                break
+            }
+            console.log(n);
+            n++;
+        }
+        // continue 指令 強迫跳回迴圈開頭 , 忽略下方程式 , 進入下一圈
+        for(let a=0;a<=5;a++){
+            if(a%2==0){ // a 除以 2 = 0 a=偶數
+                continue
+            }
+            console.log(a);
+        }
+    </script>
+</body>
+</html>

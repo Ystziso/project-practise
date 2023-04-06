@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- UTF-8=網頁文字編碼 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安安</title>
+</head>
+    <body>
+        <!--基本標籤篇-->
+        <!-- <b>=粗體 <i>=斜體 -->
+        <h1>這是標題</h1>
+        <p>這是<i><b>內容</b></i></p>
+        
+        <!-- <br>=換行 <hr>=水平線 可以打成<br/>簡寫or不+/ 因為後面不會放字 -->
+        <br>
+        <hr>
+        <h2>這是第二個標題</h2>
+        <p>這是第二段內容</p>
+
+        <!-- 連結 & 圖片篇 -->
+        <a href="https://www.youtube.com/watch?v=syoQhKTIpLI&ab_channel=MAGICOFLiFE-Topic">好音樂</a>
+        <br>
+        <a href="index.html">Hello World</a>
+        <a href="Lucy.jpg">露西</a>
+
+        <!-- 可以從外部網址圖片or自己準備的圖片 -->
+        <img src="https://thumbor.4gamers.com.tw/dTjCYLJpPerfGf6xzJsR5--IJa8=/adaptive-fit-in/1200x1200/filters:no_upscale():extract_cover():format(jpeg):quality(85)/https%3A%2F%2Fugc-media.4gamers.com.tw%2Fpuku-prod-zh%2Fanonymous-story%2F8b3326a2-9e8b-4f91-9908-69f0b5bb210a.jpg" height="400">
+        
+        <!-- 只定義寬度或高度=等比例縮小 -->
+        <img src="Lucy.jpg" width="500">
+        
+        <!-- 在網站鑲入連結 -->
+        <video src=""></video>
+        <iframe width="400" src="https://www.youtube.com/embed/syoQhKTIpLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+        <!-- 列表 -->
+        <ul>
+            <li>facebook</li>
+            <li>ptt</li>
+        </ul>
+
+        <!-- A=英文大小寫 I=羅馬拼音大小寫 -->
+        <ol type="A">
+            <li>巴哈姆特</li>
+            <li>ig</li>
+        </ol>
+        
+        <!-- 表格 tr=行數 td=內容 -->
+        <table width="400">
+            <tr>
+                <td>日期</td>
+                <td>國文</td>
+                <td>英文</td>
+            </tr>
+            <tr>
+                <td>3/23</td>
+                <td>70</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>3/24</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+        </table>
+
+        <!--容器 div 用來簡化寫css的流程 只要寫在div後面不用一個一個寫-->
+        <div style="color:aqua">
+            <table width="400" border="1">
+                <tr>
+                    <td>日期</td>
+                    <td>國文</td>
+                    <td>英文</td>
+                </tr>
+                <tr>
+                    <td>3/23</td>
+                    <td>70</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>3/24</td>
+                    <td>80</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- html輸入屬性標籤 -->
+        <input type="text" placeholder="請輸入帳號">
+        <br>
+        <br>
+        <input type="password" placeholder="請輸入密碼">
+        <br>
+        <br>
+        <input type="date" value="2022-03-24">
+        <br>
+        <br>
+        <input type="range">
+        <br>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <input type="checkbox">
+        <br>
+        <br>
+        <textarea></textarea>
+    </body>
+</html>

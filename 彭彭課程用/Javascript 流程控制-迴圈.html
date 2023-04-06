@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 流程控制-迴圈</title>
+</head>
+<body>
+    <script>
+        // while 迴圈練習
+        let n=0;
+        while(n<5){
+            console.log(n);
+            n++;
+        }
+
+        // for 迴圈練習
+        for(let n=0;n<5;n++){
+            console.log(n);
+        }
+
+        // 練習題 計算1+2+3+...+10的結果 
+        // for寫法
+        let result=0
+        for(let n=1;n<=10;n++){
+            result=result+n;
+        }
+        console.log(result);
+
+        // while寫法
+        let a=1;
+        let b=0;
+        while(a<=10){
+            b=a+b;
+            a++;
+        }
+        console.log(b);
+    </script>
+</body>
+</html>

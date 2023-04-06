@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .btn{
+                background-color: pink;
+                padding: 8px;border-radius: 5px;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Javascript 事件處理</h3>
+        <!--
+        <button 
+            onclick="console.log('滑鼠點擊');"
+            onmouseover="console.log('滑鼠移入');"
+            onmouseout="console.log('滑鼠移出');"
+            onmousedown="console.log('滑鼠按住');"
+            onmouseup="console.log('滑鼠放開');"
+        >點我</button>
+        -->
+        <span 
+            class="btn"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+        >點我</span>
+        <span 
+            class="btn"
+            onmouseover="over(this);" onmouseout="out(this);"
+            onmousedown="down(this);" onmouseup="up(this);"
+        >第二個按鈕</span>
+        <script>
+            function up(elem){
+                elem.style.fontWeight="normal";
+            }
+            function down(elem){
+                elem.style.fontWeight="bold";
+            }
+            function over(elem){
+                elem.style.backgroundColor="yellow";
+            }
+            function out(elem){
+                elem.style.backgroundColor="pink";
+            }
+        </script>
+    </body>
+</html>

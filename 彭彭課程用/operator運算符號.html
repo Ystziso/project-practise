@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript 運算符號</title>
+    </head>
+    <body>
+        <script>
+            //算術運算：+,-,*,/,%
+            let x=2+5;
+            console.log(x);
+            x=7%3; //%=模運算：變數為餘數 7 除以 3 的餘數
+            console.log(x);
+            
+            //指定運算：+=,-=,*=,/=,%=
+            x+=5; // x=x+5 兩個寫法都可以
+            x*=10 // x=x*10
+            console.log(x); //會印出什麼 
+            
+            //比較運算：<,>,<=,>=,==
+            x=4>3;
+            console.log(x);
+            x=4<=3;
+            console.log(x);
+            x=4==4; // 先看等號右邊 4=4
+            console.log(x);
+            x="Javascript"=="Javascript";
+            console.log(x);
+
+            //單元運算：!,++,--
+            x=!x; //!=布林值的反運算
+            console.log(x); //延續上面的true 這邊輸出為false
+            x=3;
+            x++; // x+=1; // x=x+1;
+            console.log(x);
+
+            //邏輯運算：&&,|| &&=且(and); ||=或(or)
+            let test=true&&true;
+            console.log(test);
+            test=true&&false;
+            console.log(test);
+            test=true||false;
+            console.log(test);
+            test=false||false;
+            console.log(test);
+
+            //練習題：請使用者輸入兩個數字,得到乘法的結果
+            //要求使用者輸入：prompt("字串","字串") //字串可為空白 [回傳]使用者的輸入
+            let a=prompt("請輸入第一個數字",""); //變數名稱=指令回傳的資料
+            let b=prompt("請輸入第二個數字","");
+            let c=a*b;
+            console.log(c);
+        </script>
+    </body>
+</html>

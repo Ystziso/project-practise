@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript HTLM DOM 實戰操作</title>
+    </head>
+    <body>
+        <h1>HTML DOM 實戰操作標題</h1>
+        <div id="content">HTML DOM 實戰操作內容</div>
+        <button onclick="test();">點我</button>
+        <script>
+            // 取得標籤物件
+            let elem=document.querySelector("#content");
+            // 操作標籤物件
+            function test(){
+                elem.innerHTML="這是點擊後的新內容" // 修改標籤內容
+                elem.className="style" // 給予一個Css id
+                elem.style.fontSize="30px" // font-size 程式碼內不能用- 改用大寫區分
+                elem.style.fontWeight="bold" 
+                elem.style.color="pink"
+            }
+        </script>
+    </body>
+</html>

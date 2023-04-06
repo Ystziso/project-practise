@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>箭頭函式</title>
+    </head>
+    <body>
+       <script>
+            // 計算 1+2+3+..+max 的結果
+            // for 的寫法
+            function total(max){
+                let result=0 // 宣告變數要在函式裡面
+                for(let n=1;n<=max;n++){
+                    result=result+n;
+                }
+                // console.log(result);
+                return result; //回傳值
+            }
+            let ans1=total(10); // 1+2+3+..+10 , 宣告一個變數=回傳值 1
+            let ans2=total(20); // 1+2+3+..+20 , 宣告一個變數=回傳值 2
+            console.log(ans1, ans2);
+
+            // while 的寫法
+            function add(max){
+                let result1=0;
+                let n=1;
+                while(n<=max){
+                    result1=result1+n;
+                    n++;
+                }
+                // console.log(result1);
+                return result1;
+            }
+            let ans3=add(10);
+            let ans4=add(20);
+            console.log(ans3, ans4);
+
+            // 箭頭函式的寫法
+            let calculate=(max)=>{
+                let result2=0
+                let a=1
+                while(a<=max){
+                    result2=result2+a;
+                    a++;
+                }
+                return result2;
+            }
+            let ans5=calculate(10);
+            let ans6=calculate(20);
+            console.log(ans5, ans6);
+            
+            // 乘法的箭頭函式
+            let multiply=(b1,b2,b3)=>{ // 當函式裡的程式碼只有一行 return, 可以簡寫
+                return b1*b2*b3;                 
+            }
+            let ans7=multiply(3, 4, 5);
+            console.log(ans7);
+            
+            // 簡寫版
+            let multiply1=(d1,d2,d3)=>(d1*d2*d3);
+            let ans8=multiply1(3, 4, 5);
+            console.log(ans8);
+       </script>        
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript 流程控制-迴圈</title>
+    </head>
+    <body>
+        <script>
+            let man=new Object(); //創造一個空的物件 man
+                man.name="小明"; //物件的成員 物件.名稱=資料
+                man.age=18;
+                man.talk=function(){ // 物件的函式 = 方法
+                    console.log("Hello Javoscript");
+                    // 在物件方法中使用this,代表物件本身
+                    console.log("Hello 我是"+this.name+"年齡"+this.age);
+                }
+                console.log(man); // 印出 整個物件
+                console.log(man.age<20); // 印出 判斷式
+                man.talk(); // 呼叫物件的方法
+
+                // 利用 JSON 創造物件 縮短程式碼長度
+                // let 物件={成員名稱:資料,成員名稱:資料,...}
+            let woman={
+                age:19,
+                name:"小芬",
+                talk:function(){
+                    console.log("大家好我的名字叫"+this.name+"我今年"+this.age+"歲")
+                    }
+                };
+            console.log(woman);
+            woman.talk();    
+        </script>
+    </body>
+</html>

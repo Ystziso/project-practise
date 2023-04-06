@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript HTLM DOM 標籤選單練習</title>
+    </head>
+    <body>
+        <div>
+            <span onclick="test1()">自我介紹</span>
+            <span onclick="test2()">學經歷</span>
+        </div>
+        <hr/>
+        <div id="content">大家好, 我是竣宇</div>
+        <script>
+            let elem=document.querySelector("#content");
+            function test1(){
+                elem.innerHTML="大家好, 我是竣宇"
+            }
+            function test2(){
+                elem.innerHTML="我畢業於文化大學企業管理學系。"
+            }
+
+        </script>
+    </body>
+</html>

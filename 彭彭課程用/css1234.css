@@ -1,0 +1,34 @@
+.frame{
+    display:flex; /*讓項目水平排列*/
+}
+.left{
+    background-color:red;
+    flex:none; /*項目大小固定*/
+    width:200px
+}
+.right{
+    display:flex;
+    justify-content:flex-end; /*項目靠右對齊*/
+    background-color:blue;
+    flex:auto; /*項目大小自動填滿*/
+}
+.item{
+    background-color:#cccccc;
+    flex:none;
+    width:200px;
+    margin-right:10px;
+    text-align:center;
+}
+.welcome{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:500px;
+    background-color:#cccccc;
+}
+.text{
+    width:300px;height:40px;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+}
